@@ -1,8 +1,21 @@
 .steps-section {
 	margin-top: 80px;
     background-color: #fff;
-    
+
+
+	h2 {
+		&:after {
+		left: 50%;
+    	margin-left: -60px;
+		position: absolute;
+    	width: 120px!important;
+		}
+	}
+
+
     .steps {
+        margin-top: 40px;
+
         .number {
             width: 80px;
             z-index: 2;
@@ -64,6 +77,8 @@
         }
 
         .text {
+            margin-top: -40px;
+
             h2 {
 				margin-top: 0;
                 font-size: 30px;
@@ -76,12 +91,12 @@
 
         .line {
             left: -58.5%;
-            top: 75px;
+            top: -10px;
             border-bottom: 6px dotted transparent;
             font: 0/0 a;
             color: transparent;
             text-decoration: none;
-            width: 180px;
+            width: 220px;
             transform-origin: 0 50%;
             transform: scale(1) rotate(90deg);
             border-color: rgba(0, 0, 0, 0.2);
@@ -197,7 +212,7 @@
             }
 
             .text {
-                margin-left: 8.333333333333332%;
+                margin-top: 20px;
             }
 
             .icon-hiw, .line, .ribbon {
