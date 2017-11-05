@@ -113,6 +113,23 @@
 
 }
 
+.navbar-default .navbar-nav > li.isActive {
+    background: linear-gradient(180deg,#009688,rgba(128,228,233,0));
+
+    a {
+        &:after {
+            content: "";
+            position: absolute;
+            bottom: 20px;
+            left: 15px;
+            width: calc(100% - 30px);
+            height: 4px;
+            background-color: #ffbe39;
+            pointer-events: none;
+        }
+    }
+}
+
 .navbar-default .navbar-nav > li:hover  {
     background: linear-gradient(180deg,#009688,rgba(128,228,233,0));
 }

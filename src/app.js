@@ -11,7 +11,6 @@ import WhitePaperScene from './scenes/WhitePaper'
 
 import {
   BrowserRouter as Router,
-  HashRouter,
   Redirect,
   Switch,
   Route
@@ -68,19 +67,17 @@ class App extends Component {
 
     render(){
         return(
-            <HashRouter>
-                <div>
-                    <TopBar  linksSpec = { linksSpec } />
-                    <Switch>
-                        <Route exact path="/" component={HomeScene}/>
-                        <Route path="/about_realsafe" component={HowItWorksScene}/>
-                        <Route path="/ico" component={ICOScene}/>
-                        <Route path="/whitepaper" component={WhitePaperScene}/>
-                        <Redirect to='/' />
-                    </Switch>
-                    <Footer />
-                </div>
-            </HashRouter>
+            <div>
+                <TopBar  linksSpec = { linksSpec } />
+                <Switch>
+                    <Route exact path="/" component={HomeScene}/>
+                    <Route path="/about_realsafe" component={HowItWorksScene}/>
+                    <Route path="/ico" component={ICOScene}/>
+                    <Route path="/whitepaper" component={WhitePaperScene}/>
+                    <Redirect to='/' />
+                </Switch>
+                <Footer />
+            </div>
         )
     }
 }

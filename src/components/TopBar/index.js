@@ -20,15 +20,21 @@ class TopBar extends PureComponent {
     constructor(props){
         super(props)
 
-        this.state = {
-            activeRoute: '/',
-            topBarClass: ''
-        }
 
         this.linksSpec = []
 
+        this.state = {
+            activeRoute: '/',
+            topBarClass: '',
+            isActive: ''
+        }
+
         this.props.history.listen( (location, action) => {
             this.setState({activeRoute: location.pathname});
+            this.linksSpec = this.updateLinkSpec(
+                location.pathname,
+                this.props.linksSpec
+            )
         });
 
     }
@@ -78,11 +84,15 @@ class TopBar extends PureComponent {
 
     updateLinkSpec( activeRoute, linksSpec ){
 
+        console.log('activeroute', activeRoute);
         const mapper = linkSpec => {
 
             let { route } = linkSpec;
 
-            let isActive = route === activeRoute;
+            let isActive = '';
+            if (activeRoute !== '/') {
+                 isActive = route === activeRoute;
+            }
 
             return Ru.assoc('isActive', isActive, linkSpec)
         }
@@ -93,9 +103,13 @@ class TopBar extends PureComponent {
 
     manageTopBar (route) {
         if (route !== '/') {
-            this.setState({topBarClass: 'floatingRoute'});
+            this.setState({
+                topBarClass: 'floatingRoute',
+            });
         } else {
-            this.setState({topBarClass: ''});
+            this.setState({
+                topBarClass: ''
+            });
         }
     }
 
@@ -136,7 +150,7 @@ class TopBar extends PureComponent {
         //   <li key={i} > <a className={ className } href={ anchorLink } {...aProps}>{title}</a> </li>
         // )
         return (
-          <li key={i} > <a href={ anchorLink } {...aProps}>{title}</a> </li>
+          <li key={i} className={(isActive)?'isActive':'' }> <a className={ className } href={ anchorLink } {...aProps}>{title}</a> </li>
         )
     }
 }
