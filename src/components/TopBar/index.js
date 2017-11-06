@@ -20,14 +20,13 @@ class TopBar extends PureComponent {
     constructor(props){
         super(props)
 
-
-        this.linksSpec = []
-
         this.state = {
             activeRoute: '/',
             topBarClass: '',
             isActive: ''
         }
+
+        this.linksSpec = []
 
         this.props.history.listen( (location, action) => {
             this.setState({activeRoute: location.pathname});
@@ -83,8 +82,6 @@ class TopBar extends PureComponent {
     }
 
     updateLinkSpec( activeRoute, linksSpec ){
-
-        console.log('activeroute', activeRoute);
         const mapper = linkSpec => {
 
             let { route } = linkSpec;
