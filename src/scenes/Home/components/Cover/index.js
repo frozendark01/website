@@ -41,7 +41,7 @@ class Cover extends Component {
                     <div className="rs-content row" data-stellar-offset-parent="true">
                         <div className="rs-text col-lg-12 col-md-12 text-center wow bounceInDown wowed animated" data-wow-duration="1s" data-wow-delay="0.5s">
                             {/* <h1 className="rs-title">Empowering Banks to Empower You</h1>*/}
-                            <p className="rs-description">Ownership Evolved. Extends any Real Estate Corporation to Finance, Trade, Negotiate, Escrow, Raise, Vote, Pay Dividends and Add Partners 100% on the Ethereum Blockchain</p>
+                            <p className="rs-description">Proof of Ownership. Step Up Your Corporation to Finance, Trade, Negotiate, Escrow, Raise, Vote, Pay Dividends and Add Partners 100% on the Ethereum Blockchain</p>
                              <div className="btn-cta">
                                  <a  className="btn btn-app-download crowdsale">
                                      <i className="fa fa-sign-in"></i>
