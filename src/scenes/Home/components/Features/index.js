@@ -17,7 +17,7 @@ class Features extends Component {
                             </h2>
                         </div>
                         <div className="col-md-10 col-md-offset-1 description">
-                            <p> RealSafe is a blockchain platform for fractionating asset ownership into exchange-tradable tokens while transforming complex financial deals and governance business into routine blockchain transactions. The result is a network of RealSafe Organizations (RSO)s, asset-backed decentralized autonomous oragnizations owned 100% by their token holders, traded and managed with security and transparency on the Ethereum blockchain. Raise funds backed by a 4-family building with no risk of default or extend a portfolio of assets into a fully exchange-traded REIT. RealSafe RSOs feature automated distributions and separable voting and ownership tokens. RealSafe Platform offers these services: </p>
+                            <p> RealSafe puts any corporation onto blockchain with its own token and greater proof of ownership than it currently has. Owners receive erc20 compliant tokens and a powerhouse of complex financial deals and governance business options at their disposal. These become routine blockchain transactions. Tokens are tradable on the RealSafe marketplace which tracks KYC of all current owners. The result is a network of RealSafe Organizations (RSO)s, asset-backed decentralized autonomous oragnizations owned 100% by their token holders, traded and managed with security and transparency on the Ethereum blockchain. Pay dividends to just one account or transform your portfolio of assets into an exchange-traded corporation - without the paperwork, yet with greater proof of ownership. RealSafe tracks KYC on any token holders, so your CFO can easily track all token holders who received any dividend payout at end of year. No more worrying at tax time. RSOs feature automated distributions and separable voting and ownership tokens. RealSafe Platform offers many transaction types and these services: </p>
                         </div>
                     </div>
                     <div className="row platform">
@@ -25,28 +25,28 @@ class Features extends Component {
                             <ul className="list-left wow fadeInLeft animated" data-wow-duration="1s">
                                 <li className="item">
                                     <h5>Power and flexibility</h5>
-                                    <p>general partner/propery manager can set disclosable comissions whenever a trade is made of their token, converting the general partner into a fund manager. That's unbelieveable power.</p>
+                                    <p>Voting partners can set a wallet to receive disclosable comissions whenever a trade is made of their token, easily creating the position of a marketing manager. That's unbelieveable power.</p>
                                 </li>
                                 <li className="item">
                                     <h5>RealSafe Marketplace </h5>
-                                    <p>Lists all RSOs - The trading of an RSO commences the moment an owner creates a market by offering any amount of his apportioned tokens on the RealSafe Exchange.</p>
+                                    <p>Lists all RSOs - The trading of an RSO commences the moment any owner creates a market by offering any amount of his apportioned tokens on the RealSafe MarketPlace.</p>
                                 </li>
                             </ul>
                         </div>
                         <div className="col-md-4 col-md-push-4 col-sm-6">
                             <ul className="list-right wow fadeInRight animated" data-wow-duration="1s">
                                 <li className="item">
-                                    <h5>Blockchain Explorer API</h5>
-                                    <p> Provides the structure to ensure vital RSO stats. are stored on blockchain. Anyone can create a RealSafe Explorer using the API.</p>
+                                    <h5>Proof of Ownership</h5>
+                                    <p> Ownership changes hands. RealSafe proves ownership at a degree far higher than corporate books.  Anyone can view company data on blockchain. But only RSO master wallet signatories can see unencrypted KYC data, linking owners by name and ID to the company on any specified date privately. This creates an unprecedented level of protection for each owner.  RealSafe simulates requirements of the real world with greater proof of ownership using a decentralized and secure network that the platform converts into a corporate ownership tracking authority.</p>
                                 </li>
                                 <li className="item">
-                                    <h5>Compliance and safety</h5>
-                                    <p>RSO creator sets features to allow investor buy-in restrictions such as kyc compliance, min/max ownership limits, buy/sell freq. limits etc.</p>
+                                    <h5>Compliance - Max. Owners Lock</h5>
+                                    <p>RSO signatories set corporate preferences to allow investor buy-in restrictions such as minimum and maximum number of total owners, buy/sell frequency limits etc.</p>
                                 </li>
                             </ul>
                         </div>
                         <div className="col-md-4 col-md-pull-4 text-center">
-                            <img src={'assets/img/features_app.png'} className="image wow fadeInUp animated" alt="" data-wow-duration="1s"/>
+                            <img src={'assets/img/blockchain_explorer.png'} className="image wow fadeInUp animated" alt="" data-wow-duration="1s"/>
                         </div>
                     </div>
                 </div>
