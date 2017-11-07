@@ -44,7 +44,7 @@ class CollapseText extends PureComponent {
 
     checkOpen(icon) {
         const aPropsIcon = {
-            className: `icon fa fa-angle-double-${icon}`
+            className: `showmore-icon fa fa-angle-double-${icon}`
         }
 
         const aPropsLink = {

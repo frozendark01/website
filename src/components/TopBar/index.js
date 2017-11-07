@@ -147,7 +147,7 @@ class TopBar extends PureComponent {
         //   <li key={i} > <a className={ className } href={ anchorLink } {...aProps}>{title}</a> </li>
         // )
         return (
-          <li key={i} className={(isActive)?'isActive':'' }> <a className={ className } href={ anchorLink } {...aProps}>{title}</a> </li>
+          <li key={i} className={(isActive)?'isActive':'' }> <a href={ anchorLink } {...aProps}>{title}</a> </li>
         )
     }
 }

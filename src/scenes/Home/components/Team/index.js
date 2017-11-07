@@ -67,6 +67,31 @@ let advisors = [
     }
 ]
 
+
+let partners = [
+    {
+        name:'launch Partner 1',
+        office : 'Advisor, Grant Writer, Statistician',
+        bio: ' Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
+        image: 'assets/img/team-c.png',
+        type:'partner'
+    },
+    {
+        name:'launch Partner 2',
+        office : 'Advisor, Grant Writer, Statistician',
+        bio: ' Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
+        image: 'assets/img/team-c.png',
+        type:'partner'
+    },
+    {
+        name: 'launch Partner 3',
+        office : 'Advisor, Grant Writer, Statistician',
+        bio: ' Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
+        image: 'assets/img/team-c.png',
+        type:'partner'
+    }
+]
+
 class Team extends Component {
 
     constructor() {
@@ -77,6 +102,7 @@ class Team extends Component {
         return(
             <section id="team" className="team-section section">
                 <div className="container">
+                    {/* Team */}
                     <div className="row">
                         <div className="col-md-12">
                             <h2 className="section-heading wow fadeIn" data-wow-duration="1s">
@@ -89,6 +115,8 @@ class Team extends Component {
                             Ru.addIndex(Ru.map)(this.renderPlayer, team)
                         }
                     </div>
+
+                    {/* Advisors */}
                     <div className="row">
                         <div className="col-md-12">
                             <h2 className="section-heading wow fadeIn" data-wow-duration="1s">
@@ -101,14 +129,35 @@ class Team extends Component {
                             Ru.addIndex(Ru.map)(this.renderAdvisors, advisors)
                         }
                     </div>
+
+                    {/* Partners */}
+                    <div className="row">
+                        <div className="col-md-12">
+                            <h2 className="section-heading wow fadeIn" data-wow-duration="1s">
+                                Launch Partners
+                            </h2>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                        </div>
+                    </div>
+                    <div className="row team-list">
+                        {
+                            Ru.addIndex(Ru.map)(this.renderPartners, partners)
+                        }
+                    </div>
                 </div>
             </section>
         )
     }
 
+    renderPartners(spec, i) {
+        return (
+            <Player spec={ spec } key = { i } index={ i } />
+        )
+    }
+
     renderAdvisors(spec, i) {
         return (
-            <Player spec={ spec} key = { i } index={ i } />
+            <Player spec={ spec } key = { i } index={ i } />
         )
     }
 

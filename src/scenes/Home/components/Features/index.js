@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import CollapseText from '../../../../components/CollapseText'
 
 class Features extends Component {
 
@@ -37,7 +38,7 @@ class Features extends Component {
                             <ul className="list-right wow fadeInRight animated" data-wow-duration="1s">
                                 <li className="item">
                                     <h5>Proof of Ownership</h5>
-                                    <p> Ownership changes hands. RealSafe proves ownership at a degree far higher than corporate books.  Anyone can view company data on blockchain. But only RSO master wallet signatories can see unencrypted KYC data, linking owners by name and ID to the company on any specified date privately. This creates an unprecedented level of protection for each owner.  RealSafe simulates requirements of the real world with greater proof of ownership using a decentralized and secure network that the platform converts into a corporate ownership tracking authority.</p>
+                                    <CollapseText text="Ownership changes hands. RealSafe proves ownership at a degree far higher than corporate books.  Anyone can view company data on blockchain. But only RSO master wallet signatories can see unencrypted KYC data, linking owners by name and ID to the company on any specified date privately. This creates an unprecedented level of protection for each owner.  RealSafe simulates requirements of the real world with greater proof of ownership using a decentralized and secure network that the platform converts into a corporate ownership tracking authority." size="188"/>
                                 </li>
                                 <li className="item">
                                     <h5>Compliance - Max. Owners Lock</h5>
@@ -46,7 +47,7 @@ class Features extends Component {
                             </ul>
                         </div>
                         <div className="col-md-4 col-md-pull-4 text-center">
-                            <img src={'assets/img/blockchain_explorer.png'} className="image wow fadeInUp animated" alt="" data-wow-duration="1s"/>
+                            <img src={'assets/img/blockchain_explorer.jpg'} className="image wow fadeInUp animated" alt="" data-wow-duration="1s"/>
                         </div>
                     </div>
                 </div>
