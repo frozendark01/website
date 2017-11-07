@@ -15,7 +15,7 @@ class Noforced extends Component {
                             <h2 className="section-heading wow fadeIn" data-wow-duration="1s">
                                 No Forced Sale Date - ever
                             </h2>
-                            <p className="wow fadeIn description" data-wow-duration="1s">RealSafe creates your RSO through the RealSafe Wallet and Listing Service - Designed to ensure your existing structure and ownership entities are preserved. No encumberments, no forced settlement dates. RealSafe is led by an experienced team of real estate investors, scientists, engineers and developers</p>
+                            <p className="wow fadeIn description" data-wow-duration="1s">RealSafe invites any duly authorized officer to create their own RSO.  The process is designed to ensure the existing corporate structure and ownership entities are preserved, surviving the tokenization event. No encumberments, no forced settlement dates. RealSafe is led by an experienced team of real estate investors, scientists, engineers, legal experts, developers and advisors</p>
                         </div>
                     </div>
                     <div className="row">
@@ -27,7 +27,7 @@ class Noforced extends Component {
                                 <li>Blockchain records all exchanges, voting operations and other communications as RealSafe transactions for all time.</li>
                                 <li>No more minutes in books are necessary.  Any votable issue is maintainable through the RealSafe platform</li>
                                 <li>Each RSO has separate voting tokens for the case where the voting rights are not the same as the ownership rights</li>
-                                <li>Tokens representing each RSO are transferred through unique RealSafe generated contracts on the Ethereum Blockchain.</li>
+                                <li>Tokens representing each RSO are transferred through uniquely generated contracts on the Ethereum Blockchain, each correposnding to a specific RSO managing only that RSO's tokens.</li>
                                 <li>All RSO sub-tokens are erc-20 compliant.  Therefore, if an RSO restricts token trading to a small subgroup of persons, Realsafe controls this via tokens swapped on the RealSafe marketplace.
                                 If RSO owner has all regulation in place as a public security with unlimited owners, he may also list his token on any crypto exchange.  </li>
                                 <li>Most important, if a transfer is found fraudulent in a court of law, the court may require temporary suspension of trading, reversal or closure of the RSO - as it could in the real world. </li>

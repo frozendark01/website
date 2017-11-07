@@ -19,7 +19,7 @@ class Advantages extends Component {
                     </div>
                     <div className="row image">
                         <div className="col-md-8 col-md-offset-2">
-                            <img src={'assets/img/advantages.png'} alt="" />
+                            <img src={'assets/img/fb1.jpg'} alt="" />
                         </div>
                     </div>
                     <div className="row advantages">
@@ -63,7 +63,7 @@ class Advantages extends Component {
                                     <div className="contain">
                                         <div className="img">
                                             <div className="circle">
-                                                <i className="fa fa-times" aria-hidden="true"></i>
+                                                <i className="fa fa-money" aria-hidden="true"></i>
                                             </div>
                                         </div>
                                         <h3>Tenants can Pay Rent</h3>

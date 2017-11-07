@@ -22,7 +22,7 @@ class Ecosystem extends Component {
                             <a href="" className="ecosystem-item">
                             <img src={'assets/img/ecosystem-img-1.png'}  alt=""/></a>
                             <h3>RealSafe Tokenization System</h3>
-                            <p>Asset Managers use RealSafe Wallet to create an RSO. RealSafe LLC provides free consults and attorney services.</p>
+                            <p>Authorized corporate officers use RealSafe Wallet to create an RSO. RealSafe LLC provides free consults and attorney services.</p>
                         </div>
                         <div className="col-md-4">
                             <a href="" className="ecosystem-item">
@@ -33,7 +33,7 @@ class Ecosystem extends Component {
                         <div className="col-md-4">
                             <a href="" className="ecosystem-item">
                             <img src={'assets/img/ecosystem-img-3.png'}  alt=""/></a>
-                            <h3>RealSafe Exchange</h3>
+                            <h3>RealSafe MarketPlace</h3>
                             <p>The singular place for trading RSO/ETH pairs and the RST/Eth pair.</p>
                         </div>
                     </div>

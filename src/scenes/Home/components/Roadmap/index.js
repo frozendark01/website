@@ -40,7 +40,7 @@ class Roadmap extends Component {
                                        </div>
                                        <div className="roadmap-list-item-l wow fadeInLeft wowed animated col-sm-6" data-wow-duration="1s" data-wow-delay="0.5s">
                                             <span className="title">100% Decentralization</span>
-                                            <p>RSOs are self-added. Ensuring the validity and accuracy of each RSO is a collective effort, initiated by the RSO creator and a small network of pre-existing RSOs.  An extensive auditor network will complete the fully autonomous model of RealSafe.   Until then we beleive teh data uploaded as part of starting an RSO should be sufficient for any investor to do sufficient due-diligence by,for exmaple, visiting county offices to check that recorded docs match uploaded URL docs.</p>
+                                            <p>RSOs are self-added at a cost. Ensuring the validity of each RSO is a collective effort, initiated by the RSO creator and a small network of pre-existing RSOs.  An extensive auditor network will complete the fully autonomous model of RealSafe.   Until then we beleive the data uploaded as part of the RSO should be sufficient for any investor to do sufficient due-diligence by, for exmaple, visiting county offices to check that recorded docs match docs found at uploaded doc. URLs or simply by the investor contacting an RSO signatory.</p>
                                             <div className="history-separator-r"> </div>
                                        </div>
                                    </div>
