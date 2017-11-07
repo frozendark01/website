@@ -90,7 +90,7 @@ class Steps extends Component {
                                 <h2>Enjoy the power of your Corporation on chain</h2>
                                 <p>The trading of an RSO commences the moment an owner creates a market by offering any
                                  amount of his apportioned tokens on the RealSafe MarketPlace.
-                                 All business is conducted as normal, but now the officers have the power of, raising money, on chain reporting, one-source dividend payouts, company meetings requiring votes, and much more without ever leaving your home! </p>
+                                 All business is conducted as normal, but now the officers have the power of, raising money, on chain reporting, one-source dividend payouts, company meetings requiring votes, and much more without ever leaving home! </p>
                             </div>
                             <div className="col-md-2 col-sm-2">
                                 <img className="icon-hiw" src={ 'assets/img/buy.png' } ></img>
