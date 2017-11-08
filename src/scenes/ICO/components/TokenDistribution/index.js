@@ -26,7 +26,7 @@ class TokenDistribution extends Component {
                                 <span> <b>2:1 Matched Token Minting</b></span>
                                 <ul className="social-numb-list">
 
-                                    <li><span>25% of matching tokens reserved for developers (priortized by time invested and earliest in over 5 years), ICO creators and deals pertaining to ICO and pre-ICO</span>.</li>
+                                    <li><span>25% reserved for developers (priortized by time invested and earliest in over 5 years), ICO creators and deals pertaining to ICO and pre-ICO</span>.</li>
                                     <li><span>25% to the founders</span></li>
                                     <li><span>25% advisors/launch partners</span></li>
                                     <li><span>25% held for the RealSafe Reserve less any referrals</span></li>
@@ -40,7 +40,7 @@ class TokenDistribution extends Component {
 <span>  Reserve Rules - Year to Year</span><br/>
 <span>90% of fees collected in ether for trading and purchase of RSOs are used to buy RST. the RST is put into the Reserve.</span><br/>
 <span> Max. of 15% of the total Reserve can be spent each year, and never more than what is received in fees. </span><br/>
-<span><b>Use of Total Yearly Reserve Spend</b></span>
+<br/><span><b>Use of Total Yearly Reserve Spend</b></span>
 <ul className="social-numb-list">
 
 <li>20% 3rd party gatekeeper network, KYC of all registrants (face recognition verify to link name, ID email)</li>
