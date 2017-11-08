@@ -23,7 +23,7 @@ class Ico extends Component {
                         </div>
                         <div className="col-md-6 col-md-offset-3">
                             <div className="btn-cta">
-                                <a  className="btn btn-app-download crowdsale">
+                                <a href="http://34.216.30.37:3000/#/register" target="_blank"  className="btn btn-app-download crowdsale">
                                     <i className="fa fa-sign-in"></i>
                                     JOIN crowdsale
                                 </a>

@@ -32,6 +32,7 @@
     "compass-mixins": "^0.12.10",
     "react": "^15.6.1",
     "react-chartjs-2": "^2.6.4",
+    "react-collapsible": "^2.0.3",
     "react-dom": "^15.6.2",
     "react-modal-video": "^1.0.7",
     "react-router": "^4.2.0",

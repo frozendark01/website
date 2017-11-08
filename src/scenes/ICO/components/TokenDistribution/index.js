@@ -18,6 +18,10 @@ class TokenDistribution extends Component {
                         </div>
                     </div>
                     <div className="row">
+                        <div className="col-md-10 col-md-offset-1">
+                            <img className="img-te" src={'assets/img/token_structure.png'}/>
+                        </div>
+
                         <div className="col-md-12">
                             <div className="social-text">
                                  <p><span># Coins Minted </span>Max. of 120,000,000 RSTs will exist immediately after ICO completes. Date of ICO to be announced.</p>
@@ -31,7 +35,7 @@ class TokenDistribution extends Component {
                                     <li><span>25% advisors/launch partners</span></li>
                                     <li><span>25% held for the RealSafe Reserve less any referrals</span></li>
                                     <li><span>Tokens are minted instead of pre-mined so there will be no additional tokens at end of ICO, however, one more ICO may take palce in 6 months, and yearly minting of a tiny .5% is planned used to maintain the network. </span></li>
-                                    
+
                                     <li><span>PoS: RST provides voting rights in some RealSafe Reserve spending decisions.  RSO owners may receive some reserve tokens year to year relative to both their total portfolio value and RSTs they may hold.</span>
 </li>
                                 </ul>
@@ -59,7 +63,7 @@ class TokenDistribution extends Component {
                                     <li><b>Ether raised at ICO </b>At least 50% will remain as ETH and as much as 50% will be converted to dollars or Euros initially to ensure there are funds in both fiat and crypto to pay developers
                                      through RealSafe LLC for initial development and platform maintenance for several years to come. </li>
                                     <li><b>RealSafe Foundation </b>By 2023 a foundation will be formed with purpose of operating the RealSafe MarketPlace and to tkae over the function of RealSafe LLC to build and maintain the RealSafe platform, the RealSafe Explorer, RealSafe Tokenization Service, Audit Service, RS Wallet and RealSafe Wallet KYC Gatekeeper Service.</li>
-                                    <li><b>Reserve Control</b> the Reserve Wallet and Smart Contract, both controlled by RealSafe LLC will be handed off to the RealSafe Foundation which will continue in the spirit of RealSafe LLCs mission to put the world's companies onto blockchain for a more secure and easier way of proving and transfering ownership.</li>                      
+                                    <li><b>Reserve Control</b> the Reserve Wallet and Smart Contract, both controlled by RealSafe LLC will be handed off to the RealSafe Foundation which will continue in the spirit of RealSafe LLCs mission to put the world's companies onto blockchain for a more secure and easier way of proving and transfering ownership.</li>
                                 </ul>
                             </div>
                         </div>

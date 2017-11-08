@@ -20,7 +20,8 @@ import {
 let linksSpec = [
     {
         title: 'JOIN CROWDSALE',
-        route: '/',
+        route: 'http://34.216.30.37:3000/#/register',
+        isUrl: true,
         isActive: false
     },
     {
