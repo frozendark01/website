@@ -20,34 +20,46 @@ class TokenDistribution extends Component {
                     <div className="row">
                         <div className="col-md-12">
                             <div className="social-text">
-                                 <p><span># Coins Minted </span>110,000,000 RSTs will be pre-mined on or before ICO date. Date of ICO to be announced.</p>
-                                <p>A maximum amount of 73,500,000 RST tokens granted to RSO pre-purchasing contributors. </p>
-                                <p>50% matched addition to tokens granted to pre-purchasers will be distributed as:</p>
+                                 <p><span># Coins Minted </span>Max. of 120,000,000 RSTs will exist immediately after ICO completes. Date of ICO to be announced.</p>
+                                <p>A maximum amount of 40,000,000 RST tokens granted to contributors and pre-purchasers (particpants) </p>
+                                <p>2 Matched tokens are minted for every 1 minted to partipcant.</p><br/>
+                                <span> <b>2:1 Matched Token Minting</b></span>
                                 <ul className="social-numb-list">
-                                    <li><span>30% of matching tokens reserved for developers (priortized by time invested and earliest in over 2 years), ICO creators and advisors</span>.</li>
-                                    <li><span>20% to the founders</span></li>
-                                    <li><span>10% held for referral-based and pre-ICO deals</span></li>
-                                    <li><span>40% held for the RealSafe Reserve</span></li>
-                                    <li><span>Unsold RST remains in RealSafe Reserve Contract, used according to the rules of the Reserve</span></li>
-                                    <li><span>Reserve rules: 20% frozen, 20% auditor incentives, 20% future advisors/development, 30% incentives to keep the RealSafe network flourishing, 10% charity</span></li>
-                                    <li><span>PoS: RST provides voting rights in most foundation decisions.  RSO owners will receive some reserve tokens year to year relative to their total portfolio value</span></li>
+
+                                    <li><span>25% of matching tokens reserved for developers (priortized by time invested and earliest in over 5 years), ICO creators and deals pertaining to ICO and pre-ICO</span>.</li>
+                                    <li><span>25% to the founders</span></li>
+                                    <li><span>25% advisors/launch partners</span></li>
+                                    <li><span>25% held for the RealSafe Reserve less any referrals</span></li>
+                                    <li><span>Tokens are minted instead of pre-mined so there will be no additional tokens at end of ICO, however, one more ICO may take palce in 6 months, and yearly minting of a tiny .5% is planned used to maintain the network. </span></li>
+                                    
+                                    <li><span>PoS: RST provides voting rights in some RealSafe Reserve spending decisions.  RSO owners may receive some reserve tokens year to year relative to both their total portfolio value and RSTs they may hold.</span>
+</li>
                                 </ul>
+
+
+<span>  Reserve Rules - Year to Year</span><br/>
+<span>90% of fees collected in ether for trading and purchase of RSOs are used to buy RST. the RST is put into the Reserve.</span><br/>
+<span> Max. of 15% of the total Reserve can be spent each year, and never more than what is received in fees. </span><br/>
+<span><b>Use of Total Yearly Reserve Spend</b></span>
+<ul className="social-numb-list">
+
+<li>20% 3rd party gatekeeper network, KYC of all registrants (face recognition verify to link name, ID email)</li>
+                                    <li><span>20%  </span>to support auditors and other function to help the network fourish.</li>
+                                    <li><span>20% </span>to support the developers, (through NationPay LLC for the first 5 years) advisors and partners needed to make the RealSafe network flourish.</li>
+                                    <li><span>20% of the Reserve RST </span>unforseen incentives, promotional faucet distros. to the world's largest corporate owners.  Max. of 5% to all Ether holders over 5 years.  </li>
+                                    <li><span>Phase 2 SEC permitting: 6.5% </span>granted to RSO owners as proportional Proof of Ownership reward.</li>
+                                    <li><span>Phase 2 SEC permitting: 6.5% </span>granted to RST owners as proportional Proof of Stake reward.</li>
+                                    <li><span>7% </span>will be used for charitable causes.</li>
+
+</ul>
                                 <ul className="options">
-                                    <li><span>Tokens Granted </span>At least $2,000,000 must be raised or the ICO period is extended to up to 90 days.  There is no minimum to be raised to consider the ICO a success because all monies raised bring the RealSafe platform closer to completion.  Whatever tokens are not granted will remain in the RealSafe Reserve Contract -  If ICO is maxed., 15,000,000 tokens will remain in Reserve</li>
-                                    <li><span>Reserve marketplace Liquidity Function </span> The RealSafe RSO marketplace allows Ether to directly pay for fees to facilitate normal RSO trading. The MarketPlace contract uses fees to buy RST tokens, raising the price of RST as the popularity of the network increases.</li>
-                                    <li><span>Reserve as it relates to RST price </span> Reserve contract will not offer RSTs to effect RST value - only in the event that at any price, there simply are not enough RSTs available to conduct normal RSO trading.</li>
-                                    <li><span>Reserve Supplementary ICO function </span> Up to 20% of the Reserve may be sold off in a subsequent offering with proceeds to benefit the RealSafe Foundation if the total ether raised after completion of initial ICO is under $10,000,000</li>
-                                    <li><span>Ether that is raised </span>At least 50% will remain as ETH and as much as 50% will be converted to dollars or Euros initially to ensure there are funds in both fiat and crypto to pay developers
+                                    <li><b>Soft-Cap Total</b> At least $2,000,000 must be raised or another higher priced round ICO  will happen in 6 months.  There is no minimum to be raised to consider the ICO a success because all monies raised bring the RealSafe platform closer to completion. We are dedicated to building RealSafe with or without ICO funding.</li>
+                                    <li><b>Reserve marketplace Liquidity Function </b> The RealSafe RSO marketplace allows Ether to directly pay for fees to facilitate normal RSO trading. The MarketPlace contract uses 90% of fees to buy RST tokens, raising the price of RST as the popularity of the network increases.</li>
+
+                                    <li><b>Ether raised at ICO </b>At least 50% will remain as ETH and as much as 50% will be converted to dollars or Euros initially to ensure there are funds in both fiat and crypto to pay developers
                                      through RealSafe LLC for initial development and platform maintenance for several years to come. </li>
-                                    <li><span>RealSafe Foundation </span>will operate the RealSafe Market Place and use RealSafe LLC to build the first RealSafe Explorer, RealSafe Tokenization Service, Audit service and RealSafe Wallet.</li>
-                                    <li><span>RealSafe Foundation </span>will  control the Reserve Contract, which will be able to mint a maximum of .5% per year RSTs. Minting will occur only if market cap. of RST is increasing or stable</li>
-                                    <li><span>Reserve Rules </span>Year to year usage in sll categories: x% of first year plus x% of additional year growth from fees.</li>
-                                    <li><span>At least 20% of the Reserve </span>is used to remain held frozen for health of the RST.  As the resreve grows, so does the amount frozen.  </li>
-                                    <li><span>At least 20% of the Reserve </span>to support auditors and other function to help the network fourish.</li>
-                                    <li><span>At least 20% of the Reserve </span>to support the developers, (through NationPay LLC for the first 5 years) advisors and partners needed to make the RealSafe network flourish.</li>
-                                    <li><span>A maximum of 20% of the Reserve RST </span>unforseen incentives, promotional faucet distros. to the world's largest corporate owners.  Max. of 5% to all Ether holders over 5 years.  </li>
-                                    <li><span>A maximum of 10% of the Reserve </span>will be used for proportional Proof of Value to combined sub-token owners.</li>
-                                    <li><span>A maximum of 10% of the Reserve </span>will be used for charitable causes.</li>
+                                    <li><b>RealSafe Foundation </b>By 2023 a foundation will be formed with purpose of operating the RealSafe MarketPlace and to tkae over the function of RealSafe LLC to build and maintain the RealSafe platform, the RealSafe Explorer, RealSafe Tokenization Service, Audit Service, RS Wallet and RealSafe Wallet KYC Gatekeeper Service.</li>
+                                    <li><b>Reserve Control</b> the Reserve Wallet and Smart Contract, both controlled by RealSafe LLC will be handed off to the RealSafe Foundation which will continue in the spirit of RealSafe LLCs mission to put the world's companies onto blockchain for a more secure and easier way of proving and transfering ownership.</li>                      
                                 </ul>
                             </div>
                         </div>
