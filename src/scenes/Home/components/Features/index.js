@@ -47,7 +47,7 @@ class Features extends Component {
                             </ul>
                         </div>
                         <div className="col-md-4 col-md-pull-4 text-center">
-                            <img src={'assets/img/blockchain_explorer.jpg'} className="image wow fadeInUp animated" alt="" data-wow-duration="1s"/>
+                            <img src={'assets/img/blockchain_explorer.jpg'} className="image wow fadeInUp animated" alt="" data-wow-duration="2s" data-wow-delay="1s"/>
                         </div>
                     </div>
                 </div>
