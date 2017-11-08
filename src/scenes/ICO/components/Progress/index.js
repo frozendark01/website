@@ -21,6 +21,8 @@ class Progress extends Component {
                     </div>
                     <div className="row wrap" data-stellar-offset-parent="true">
                         <div className="col-md-12 wow fadeIn wowed animated" data-wow-duration="1s" data-wow-delay="0.5s">
+                                 ICO Coming Soon.  &nbsp; Join now to get early-bird price.
+                             {/**
                             <div className="stat-sum-total section-title--blue">Total:
                             <span className="stats-btc-total">1228</span> ETH
                             </div>
@@ -40,7 +42,7 @@ class Progress extends Component {
                                 <div className="stat-sum-label">+<span className="stats-btc-plus">851</span> ETH
                                     <div className="stat-sum-money">&nbsp;$<span className="stats-usd-plus">3,072,440</span></div>
                                 </div>
-                            </div>
+                            </div>   */}
                         </div>
                     </div>
                     <div className="row ico">
