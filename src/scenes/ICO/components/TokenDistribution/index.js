@@ -53,7 +53,7 @@ class TokenDistribution extends Component {
 
 </ul>
                                 <ul className="options">
-                                    <li><b>Soft-Cap Total</b> At least $2,000,000 must be raised or another higher priced round ICO  will happen in 6 months.  There is no minimum to be raised to consider the ICO a success because all monies raised bring the RealSafe platform closer to completion. We are dedicated to building RealSafe with or without ICO funding.</li>
+                                    <li><b>Soft-Cap Total</b> At least $4,000,000 must be raised or another higher priced round ICO  will happen in 6 months.  There is no minimum to be raised to consider the ICO a success because all monies raised bring the RealSafe platform closer to completion. We are dedicated to building RealSafe with or without ICO funding.</li>
                                     <li><b>Reserve marketplace Liquidity Function </b> The RealSafe RSO marketplace allows Ether to directly pay for fees to facilitate normal RSO trading. The MarketPlace contract uses 90% of fees to buy RST tokens, raising the price of RST as the popularity of the network increases.</li>
 
                                     <li><b>Ether raised at ICO </b>At least 50% will remain as ETH and as much as 50% will be converted to dollars or Euros initially to ensure there are funds in both fiat and crypto to pay developers
