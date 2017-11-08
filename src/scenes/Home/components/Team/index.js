@@ -136,7 +136,7 @@ class Team extends Component {
                             <h2 className="section-heading wow fadeIn" data-wow-duration="1s">
                                 Launch Partners
                             </h2>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                            <p>Visionary companies and partnerships with mission to be on blockchcain for simple management are working with RealSafe for testing, integration and inclusion onto the RealSafe platfom.</p>
                         </div>
                     </div>
                     <div className="row partner-list text-center">
@@ -144,29 +144,24 @@ class Team extends Component {
                             <div className="row partners">
                                 <div className="partner-list-item col-md-3">
                                     <div className="contain">
-                                        <img src={ 'assets/img/google.jpg' } />
-                                        <p>Lorem Ipsum is simply dummy </p>
+                                        <img src={ 'assets/img/procomon.jpg' } />
+                                        <p>Developers in Panama since 1981 </p>
                                     </div>
 
                                 </div>
                                 <div className="partner-list-item col-md-3">
                                     <div className="contain">
-                                        <img src={ 'assets/img/google.jpg' } />
-                                        <p>Lorem Ipsum is simply dummy </p>
+                                        <p>Cal Silverman LLC</p>
+                                        <p>Fine New York Stores and Restaurants</p>
                                     </div>
                                 </div>
                                 <div className="partner-list-item col-md-3">
                                     <div className="contain">
-                                        <img src={ 'assets/img/google.jpg' } />
-                                        <p>Lorem Ipsum is simply dummy </p>
+                                        <img src={ '' } />
+                                        <p>  </p>
                                     </div>
                                 </div>
-                                <div className="partner-list-item col-md-3">
-                                    <div className="contain">
-                                        <img src={ 'assets/img/google.jpg' } />
-                                        <p>Lorem Ipsum is simply dummy </p>
-                                    </div>
-                                </div>
+
                             </div>
                         </div>
                     </div>
