@@ -13,7 +13,7 @@ class Features extends Component {
                 <div className="container">
                     <div className="row text-center">
                         <div className="col-md-12">
-                            <h2 className="section-heading wow fadeIn" data-wow-duration="1s">
+                            <h2 className="section-heading wow fadeIn" data-wow-duration="2.5s">
                                 About RealSafe
                             </h2>
                         </div>
@@ -23,7 +23,7 @@ class Features extends Component {
                     </div>
                     <div className="row platform">
                         <div className="col-md-4 col-sm-6">
-                            <ul className="list-left wow fadeInLeft animated" data-wow-duration="1s">
+                            <ul className="list-left wow fadeInLeft animated" data-wow-duration="2.5s">
                                 <li className="item">
                                     <h5>Power and flexibility</h5>
                                     <p>Any deal imaginable is votable as an Issue.  Create an Issue to set a wallet to receive disclosable comissions whenever a trade is made of the company token, easily creating the position of a marketing manager. That's unbelieveable power.</p>
@@ -35,7 +35,7 @@ class Features extends Component {
                             </ul>
                         </div>
                         <div className="col-md-4 col-md-push-4 col-sm-6">
-                            <ul className="list-right wow fadeInRight animated" data-wow-duration="1s">
+                            <ul className="list-right wow fadeInRight animated" data-wow-duration="2.5s">
                                 <li className="item">
                                     <h5>Proof of Ownership</h5>
                                     <CollapseText text="Ownership changes hands. RealSafe proves ownership at a degree far higher than corporate books.  Anyone can view company data on blockchain. But only RSO master wallet signatories can see unencrypted KYC data, linking owners by name and ID to the company on any specified date privately. This creates an unprecedented level of protection for each owner.  RealSafe simulates requirements of the real world with greater proof of ownership using a decentralized and secure network that the platform converts into a corporate ownership tracking authority." size="188"/>
@@ -47,7 +47,7 @@ class Features extends Component {
                             </ul>
                         </div>
                         <div className="col-md-4 col-md-pull-4 text-center">
-                            <img src={'assets/img/blockchain_explorer.jpg'} className="image wow fadeInUp animated" alt="" data-wow-duration="2s" data-wow-delay="1s"/>
+                            <img src={'assets/img/blockchain_explorer.jpg'} className="image wow fadeInUp animated" alt="" data-wow-duration="2.5s" />
                         </div>
                     </div>
                 </div>
