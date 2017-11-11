@@ -33,7 +33,7 @@ class TopBar extends PureComponent {
 
         this.props.history.listen( (location, action) => {
             // console.log('location::: ', location);
-
+            this.manageTopBar(location.pathname)
             this.linksSpec = this.updateLinkSpec(
                 location.pathname,
                 this.props.linksSpec
