@@ -15,7 +15,7 @@ class Ico extends Component {
                     <Row>
                         <Col md={ 12 }>
                             <h2 className="section-heading wow fadeIn" data-wow-duration="1s">
-                                Join RealSafe
+                                SIGN UP NOW FOR CARLY ACCESS
                             </h2>
                         </Col>
                     </Row>
@@ -27,7 +27,7 @@ class Ico extends Component {
                             <div className="btn-cta">
                                 <a href="http://34.216.30.37:3000/#/register" target="_blank"  className="btn btn-app-download crowdsale">
                                     <i className="fa fa-sign-in"></i>
-                                    JOIN crowdsale
+                                    REGISTER NOW
                                 </a>
                             </div>
                         </Col>
