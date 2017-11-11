@@ -220,6 +220,9 @@ class TopBar extends PureComponent {
 
         // console.log('item::: ', item);
 
+        if ( type === 'route' || type === 'anchor') {
+
+        }
 
         return (
           item.showIf() ?

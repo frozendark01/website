@@ -30,6 +30,17 @@ class App extends Component {
             title: 'DANIEL AUTH',
             sameTab: false,
             icon: null,
+            showIf: Ru.K(false),
+            className: null
+          }
+        },
+        {
+          type: 'url',
+          item: {
+            pointer: 'http://34.216.30.37:3000/#/register',
+            title: 'JOIN CROWDSALE',
+            sameTab: false,
+            icon: null,
             showIf: Ru.K(true),
             className: null
           }
@@ -40,7 +51,7 @@ class App extends Component {
             onClickAction: Ru.I,
             title: 'JOIN CROWDSALE',
             icon: null,
-            showIf: Ru.K(true),
+            showIf: Ru.K(false),
             className: null
           }
         },
@@ -107,7 +118,7 @@ class App extends Component {
             pointer: '/faq',
             title: 'F.A.Q',
             icon: null,
-            showIf: Ru.K(true),
+            showIf: Ru.K(false),
             className: null,
             isActive: true
           }
