@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 
 import autobind from 'autobind-decorator';
 
+import { Row , Col } from 'react-bootstrap';
+
 import ModalVideo from 'react-modal-video'
 
 @autobind
@@ -38,8 +40,8 @@ class Cover extends Component {
                       <img src={ 'assets/img/play.png'} />
                   </div>
                 <div className="wrap">
-                    <div className="rs-content row" data-stellar-offset-parent="true">
-                        <div className="rs-text col-lg-12 col-md-12 text-center wow bounceInDown wowed animated" data-wow-duration="1s" data-wow-delay="0.5s">
+                    <Row className="rs-content" data-stellar-offset-parent="true">
+                        <Col lg={ 12 } md={ 12 } className="rs-text text-center wow bounceInDown wowed animated" data-wow-duration="1s" data-wow-delay="0.5s">
                             {/* <h1 className="rs-title">Empowering Banks to Empower You</h1>*/}
                             <p className="rs-description">Proof of Ownership. Step Up Your Corporation to Finance, Trade, Negotiate, Escrow, Raise, Vote, Pay Dividends and Add Partners 100% on the Ethereum Blockchain</p>
                              <div className="btn-cta">
@@ -52,8 +54,8 @@ class Cover extends Component {
                                      Download WhitePaper
                                  </a>
                              </div>
-                        </div>
-                    </div>
+                        </Col>
+                    </Row>
                 </div>
             </section>
         )

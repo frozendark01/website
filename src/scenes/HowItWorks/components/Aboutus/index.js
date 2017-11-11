@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+
+import { Grid, Row , Col } from 'react-bootstrap';
+
 //import Styles from '../stylesheets/components/SearchBar.scss'
 import Ru from 'rutils'
 import AboutFeature from './components/AboutFeature'
@@ -63,24 +66,24 @@ class Aboutus extends Component {
     render(){
         return(
 			<section id="aboutus" className="aboutus-section section">
-				<div className="container" >
-					<div className="row">
-                        <div className="col-md-12">
+				<Grid>
+					<Row>
+                        <Col md={ 12 }>
                             <h2 className="section-heading wow fadeIn" data-wow-duration="1s">
                                We are RealSafe
                             </h2>
                             <p className="wow fadeIn description" data-wow-duration="1s">
-                               RealSafe puts any corporation, llc, lp, or membered organization onto blockchain with its own token and greater proof of ownership. Owners receive ownership-validating tokens and officers get a powerhouse of complex financial dealing and governance options at their disposal. Deals intertwine with governance as routine blockchain transactions. Tokens are owned only by KYC compliant persons and entities.  Tokens are tradable on the RealSafe marketplace. The result is a network of RealSafe Organizations (RSO)s, 100% decentralized autonomous oragnizations owned 100% by their token holders, managed with security and transparency on the Ethereum blockchain. Pay dividends to just one account and watch them disburse automatically to all your current owners.  Transform your LLC or LP into the likes of an ETF and with greater proof of ownership than an actual fund. RealSafe records KYC on each token holder so your CFO can easily track all token holders who receive any dividend payout throughout the year. No more worrying at tax time. RSOs feature automated distributions and separable voting and ownership tokens. RealSafe Platform offers many transaction types and these services: 
+                               RealSafe puts any corporation, llc, lp, or membered organization onto blockchain with its own token and greater proof of ownership. Owners receive ownership-validating tokens and officers get a powerhouse of complex financial dealing and governance options at their disposal. Deals intertwine with governance as routine blockchain transactions. Tokens are owned only by KYC compliant persons and entities.  Tokens are tradable on the RealSafe marketplace. The result is a network of RealSafe Organizations (RSO)s, 100% decentralized autonomous oragnizations owned 100% by their token holders, managed with security and transparency on the Ethereum blockchain. Pay dividends to just one account and watch them disburse automatically to all your current owners.  Transform your LLC or LP into the likes of an ETF and with greater proof of ownership than an actual fund. RealSafe records KYC on each token holder so your CFO can easily track all token holders who receive any dividend payout throughout the year. No more worrying at tax time. RSOs feature automated distributions and separable voting and ownership tokens. RealSafe Platform offers many transaction types and these services:
                                 <br/>Raise funds backed by a 4-family building with no risk of default or extend a portfolio of assets into a fully exchange-traded REIT. RealSafe RSOs feature automated distributions and separable voting and ownership tokens. RealSafe Platform offers these services:
                             </p>
-                        </div>
-                    </div>
-					<div className="about-list row wow fadeIn" data-wow-duration="1s">
+                        </Col>
+                    </Row>
+					<Row className="about-list wow fadeIn" data-wow-duration="1s">
                         {
                             Ru.addIndex(Ru.map)(this.renderAboutFeature, aboutList)
                         }
-					</div>
-				</div>
+					</Row>
+				</Grid>
 			</section>
         )
     }

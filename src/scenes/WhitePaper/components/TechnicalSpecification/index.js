@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Grid, Row , Col } from 'react-bootstrap';
 
 class TechnicalSpecification extends Component {
 
@@ -9,16 +10,16 @@ class TechnicalSpecification extends Component {
     render(){
         return(
             <section id="tech" className="tech-section section" >
-                <div className="container">
-                    <div className="row">
-                        <div className="col-md-12">
+                <Grid>
+                    <Row>
+                        <Col md={ 12 }>
                             <h2 className="section-heading wow fadeIn" data-wow-duration="1s">
                                 Technical Specification
                             </h2>
-                        </div>
-                    </div>
-                    <div className="row">
-                        <div className="col-md-12">
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col md={ 12 }>
                             <div className="desc-text">
                                 <p>RealSafe layer on Ethereum Blockchain</p>
                                 <ul className="options">
@@ -38,9 +39,9 @@ class TechnicalSpecification extends Component {
                                    As such, it is the responsiblity of the RSO manager to determine not to list their erc-20 compliant token on any exchange outside the RealSafe platform.
                                 </p>
                             </div>
-                        </div>
-                    </div>
-                </div>
+                        </Col>
+                    </Row>
+                </Grid>
             </section>
         )
     }

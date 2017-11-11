@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import { Grid, Row , Col } from 'react-bootstrap';
+
 class Noforced extends Component {
 
     constructor() {
@@ -9,17 +11,17 @@ class Noforced extends Component {
     render(){
         return(
             <section id="noforced" className="noforced-section section" >
-                <div className="container">
-                    <div className="row">
-                        <div className="col-md-12">
+                <Grid>
+                    <Row>
+                        <Col md={ 12 }>
                             <h2 className="section-heading wow fadeIn" data-wow-duration="1s">
                                 No Forced Sale Date - ever
                             </h2>
                             <p className="wow fadeIn description" data-wow-duration="1s">RealSafe invites any duly authorized officer to create their own RSO.  The process is designed to ensure the existing corporate structure and ownership entities are preserved, surviving the tokenization event. No encumberments, no forced settlement dates. RealSafe is led by an experienced team of real estate investors, scientists, engineers, legal experts, developers and advisors</p>
-                        </div>
-                    </div>
-                    <div className="row">
-                        <div className="col-md-12">
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col md={ 12 }>
                             <ul className="options">
                                 <li>Assets are controlled via the same voting process and governance procedures as before.  Only now the procedure is available and recordable through blockchain</li>
                                 <li>Dividends paid out with the same frequency as before, only now they are paid to just one account and automatically distributed blockchain</li>
@@ -37,9 +39,9 @@ class Noforced extends Component {
                                 <li>Many corporations need this type of protection that no existing platform can offer.</li>
                                 <li>RealSafe unique features designed to handle real-world corporate affairs, such as KYC levels for reporting on end-of-year partners invites new markets onto blockchain for the first time.</li>
                             </ul>
-                        </div>
-                    </div>
-                </div>
+                        </Col>
+                    </Row>
+                </Grid>
             </section>
         )
     }

@@ -84,7 +84,7 @@ class App extends Component {
             pointer: '/',
             path: '#roadmap',
             icon: null,
-            showIf: Ru.K(true),
+            showIf: Ru.K(false),
             className: 'anchor-link',
             isActive: false,
           }
@@ -96,7 +96,7 @@ class App extends Component {
             pointer: '/',
             path: '#team',
             icon: null,
-            showIf: Ru.K(true),
+            showIf: Ru.K(false),
             className: 'anchor-link',
             isActive: false,
           }
@@ -110,6 +110,17 @@ class App extends Component {
             showIf: Ru.K(true),
             className: null,
             isActive: true
+          }
+        },
+        {
+          type: 'url',
+          item: {
+            pointer: 'http://34.216.30.37:3000/#/login',
+            title: 'Sign In',
+            sameTab: false,
+            icon: null,
+            showIf: Ru.K(true),
+            className: null
           }
         },
         {

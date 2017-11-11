@@ -138,4 +138,10 @@
             }
         }
     }
+
+    @media (max-width: $screen-xs-max) {
+        .partner-list-item {
+            margin-bottom: 30px;
+        }
+    }
 }

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Ru from 'rutils'
+import { Grid, Row , Col } from 'react-bootstrap';
 import Guarantee from  './components/Guarantee'
 
 let guarantees = [
@@ -27,24 +28,24 @@ class Prepurchased extends Component {
     render(){
         return(
             <section id="prepurchased" className="prepurchased-section section" >
-                <div className="container">
-                    <div className="row">
-                        <div className="col-md-12">
+                <Grid>
+                    <Row>
+                        <Col md={ 12 }>
                             <h2 className="section-heading wow fadeIn" data-wow-duration="1s">
                                 Pre-Purchase an RSO
                             </h2>
-                        </div>
-                    </div>
-                    <div className="row guarantees-list ">
-                        <div className="col-md-10 col-md-offset-1">
-                            <div className="row main">
+                        </Col>
+                    </Row>
+                    <Row className="guarantees-list ">
+                        <Col md={ 10 } mdOffset={ 1 }>
+                            <Row className="main">
                                 {
                                     Ru.addIndex(Ru.map)(this.renderGuarantee, guarantees)
                                 }
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                            </Row>
+                        </Col>
+                    </Row>
+                </Grid>
             </section>
         )
     }

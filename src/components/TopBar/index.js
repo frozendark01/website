@@ -2,6 +2,8 @@
 
 import React, { PureComponent } from 'react'
 
+import { Grid, Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
+
 import Ru from 'rutils'
 
 import autobind from 'autobind-decorator'
@@ -46,35 +48,30 @@ class TopBar extends PureComponent {
     render(){
           return(
             <header className={  "header-section navbar-fixed-top navbar-default header-floating header-fixed " +  this.state.topBarClass } >
-              <div className="container">
-                  	<div className="navbar-header">
-                          <button type="button" className="navbar-toggle" data-toggle="collapse"  data-target="#navigation">
-                              <span className="sr-only">Toggle navigation</span>
-                              <span className="icon-bar"></span>
-                              <span className="icon-bar"></span>
-                              <span className="icon-bar"></span>
-                          </button>
-                          <a
-                          className = "navbar-logo"
-                          style =  { pointerStyle }
-                          href="/"
-                          onClick={ () => {
-                              this.manageTopBar('/')
-                            } }
-                          >
-                         <img src={'assets/img/logo.png'}  alt=""/>
-                            <span className="first">Real</span>Safe
-                          </a>
-                      </div>
-
-                      <div id="navigation" className="navbar-collapse collapse">
-                        <ul className="nav navbar-nav navbar-right">
-                              {
-                                  Ru.addIndex(Ru.map)(this.renderLink, this.linksSpec)
-                              }
-                        </ul>
-                    </div>
-              </div>
+                <Navbar collapseOnSelect>
+                  	<Navbar.Header>
+                        <Navbar.Brand>
+                              <a
+                              style =  { pointerStyle }
+                              href="/"
+                              onClick={ () => {
+                                  this.manageTopBar('/')
+                                } }
+                              >
+                             <img className="logo-img" src={'assets/img/logo.png'}  alt=""/>
+                                <span className="first">Real</span>Safe
+                             </a>
+                        </Navbar.Brand>
+                        <Navbar.Toggle />
+                    </Navbar.Header>
+                    <Navbar.Collapse>
+                        <Nav pullRight>
+                            {
+                                Ru.addIndex(Ru.map)(this.renderLink, this.linksSpec)
+                            }
+                        </Nav>
+                    </Navbar.Collapse>
+                 </Navbar>
             </header>
         )
     }

@@ -330,6 +330,12 @@
 
         }
     }
+
+    @media (max-width: $screen-xs-max) {
+        .cover-play {
+            left: 45%;
+        }
+    }
 }
 
 .section-inverse-color {

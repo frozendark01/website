@@ -2,6 +2,9 @@
 'use strict'
 
 import React, { Component } from 'react';
+
+import { Grid, Row , Col } from 'react-bootstrap';
+
 //import Styles from '../stylesheets/components/SearchBar.scss'
 import Ru from 'rutils'
 
@@ -101,71 +104,69 @@ class Team extends Component {
     render(){
         return(
             <section id="team" className="team-section section">
-                <div className="container">
+                <Grid className="container">
                     {/* Team */}
-                    <div className="row">
-                        <div className="col-md-12">
+                    <Row>
+                        <Col md={ 12 }>
                             <h2 className="section-heading wow fadeIn" data-wow-duration="1s">
                                Team
                             </h2>
-                        </div>
-                    </div>
-                    <div className="row team-list">
+                        </Col>
+                    </Row>
+                    <Row className="team-list">
                         {
                             Ru.addIndex(Ru.map)(this.renderPlayer, team)
                         }
-                    </div>
+                    </Row>
 
                     {/* Advisors */}
-                    <div className="row">
-                        <div className="col-md-12">
+                    <Row>
+                        <Col md={ 12 }>
                             <h2 className="section-heading wow fadeIn" data-wow-duration="1s">
                                Advisors
                             </h2>
-                        </div>
-                    </div>
-                    <div className="row team-list">
+                        </Col>
+                    </Row>
+                    <Row className="team-list">
                         {
                             Ru.addIndex(Ru.map)(this.renderAdvisors, advisors)
                         }
-                    </div>
+                    </Row>
 
                     {/* Partners */}
-                    <div className="row">
-                        <div className="col-md-12">
+                    <Row>
+                        <Col md={ 12 }>
                             <h2 className="section-heading wow fadeIn" data-wow-duration="1s">
                                 Launch Partners
                             </h2>
                             <p>Visionary companies and partnerships with mission to be on blockchcain for simple management are working with RealSafe for testing, integration and inclusion onto the RealSafe platfom.</p>
-                        </div>
-                    </div>
-                    <div className="row partner-list text-center">
-                        <div className="col-md-10">
-                            <div className="row partners">
-                                <div className="partner-list-item col-md-3">
+                        </Col>
+                    </Row>
+                    <Row className="partner-list text-center">
+                        <Col md={ 10 }>
+                            <Row className="partners">
+                                <Col md={ 3 } className="partner-list-item">
                                     <div className="contain">
                                         <img src={ 'assets/img/procomon.jpg' } />
                                         <p>Developers in Panama since 1981 </p>
                                     </div>
-
-                                </div>
-                                <div className="partner-list-item col-md-3">
+                                </Col>
+                                <Col md={ 3 } className="partner-list-item">
                                     <div className="contain">
                                         <p>Cal Silverman LLC</p>
                                         <p>Fine New York Stores and Restaurants</p>
                                     </div>
-                                </div>
-                                <div className="partner-list-item col-md-3">
+                                </Col>
+                                <Col md={ 3 } className="partner-list-item">
                                     <div className="contain">
                                         <img src={ '' } />
                                         <p>  </p>
                                     </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                                </Col>
+                            </Row>
+                        </Col>
+                    </Row>
+                </Grid>
             </section>
         )
     }
