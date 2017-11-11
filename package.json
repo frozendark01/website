@@ -37,6 +37,7 @@
     "react-modal-video": "^1.0.7",
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2",
+    "react-router-hash-link": "^1.1.1",
     "react-slick": "^0.15.4",
     "resolve-url-loader": "^2.1.0",
     "rutils": "^1.0.25",

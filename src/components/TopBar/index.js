@@ -8,7 +8,9 @@ import autobind from 'autobind-decorator'
 
 import {
   withRouter
-} from 'react-router-dom';
+} from 'react-router-dom'
+
+import { HashLink as Link } from 'react-router-hash-link'
 
 let pointerStyle = {
   cursor: 'pointer'
@@ -21,8 +23,7 @@ class TopBar extends PureComponent {
         super(props)
 
         this.state = {
-            topBarClass: '',
-            isActive: ''
+            topBarClass: ''
         }
 
         this.linksSpec = this.updateLinkSpec(
@@ -31,7 +32,7 @@ class TopBar extends PureComponent {
         )
 
         this.props.history.listen( (location, action) => {
-            console.log('location::: ', location);
+            // console.log('location::: ', location);
 
             this.linksSpec = this.updateLinkSpec(
                 location.pathname,
@@ -80,7 +81,7 @@ class TopBar extends PureComponent {
 
     updateLinkSpec( activeRoute, linksSpec ){
 
-        console.log('activeRoute::: ', activeRoute);
+        // console.log('activeRoute::: ', activeRoute);
 
         const setActiveForRoute = linkSpec => {
             let {
@@ -186,11 +187,7 @@ class TopBar extends PureComponent {
 
           return {
             style: pointerStyle,
-            onClick: () => {
-              this.props.history.push( pointer )
-              this.manageTopBar( pointer )
-            },
-            href: path
+            to: `${pointer}${path}`
           }
         }
 
@@ -203,10 +200,7 @@ class TopBar extends PureComponent {
 
           return {
             style: pointerStyle,
-            onClick: () => {
-              this.props.history.push( pointer )
-              this.manageTopBar( pointer )
-            }
+            to: pointer
           }
         }
 
@@ -218,10 +212,14 @@ class TopBar extends PureComponent {
         ])
 
 
-        // console.log('item::: ', item);
-
         if ( type === 'route' || type === 'anchor') {
-
+          return (
+            item.showIf() ?
+              <li key={i} className={ item.isActive?'isActive':'' }>
+                <Link {...mkProps(spec)}>{ item.title }</Link>
+              </li>
+              :''
+          )
         }
 
         return (

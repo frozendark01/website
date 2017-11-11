@@ -82,6 +82,21 @@
     letter-spacing: 0.5px;
 }
 
+.navbar-nav > li > Link {
+    margin-bottom: 0!important;
+    margin-top: 0!important;
+    padding-top: 0;
+    padding-bottom: 0;
+    /* line-height: 25px; */
+    font-size: 16px;
+    height: 80px;
+    text-transform: uppercase;
+    line-height: 80px;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
 .navbar-default .navbar-nav > li > a {
 	color: #fff;
 }
