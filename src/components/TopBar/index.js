@@ -21,15 +21,18 @@ class TopBar extends PureComponent {
         super(props)
 
         this.state = {
-            activeRoute: '/',
             topBarClass: '',
             isActive: ''
         }
 
-        this.linksSpec = []
+        this.linksSpec = this.updateLinkSpec(
+          this.props.location.pathname,
+          this.props.linksSpec
+        )
 
         this.props.history.listen( (location, action) => {
-            this.setState({activeRoute: location.pathname});
+            console.log('location::: ', location);
+
             this.linksSpec = this.updateLinkSpec(
                 location.pathname,
                 this.props.linksSpec
@@ -38,12 +41,6 @@ class TopBar extends PureComponent {
 
     }
 
-    componentWillMount(){
-        this.linksSpec = this.updateLinkSpec(
-            this.state.activeRoute,
-            this.props.linksSpec
-        )
-    }
 
     render(){
           return(
@@ -82,17 +79,51 @@ class TopBar extends PureComponent {
     }
 
     updateLinkSpec( activeRoute, linksSpec ){
-        const mapper = linkSpec => {
 
-            let { route } = linkSpec;
+        console.log('activeRoute::: ', activeRoute);
 
-            let isActive = '';
-            if (activeRoute !== '/') {
-                 isActive = route === activeRoute;
+        const setActiveForRoute = linkSpec => {
+            let {
+              type,
+              item
+            } = linkSpec
+
+            let isActive = activeRoute === '/' ? false : item.pointer === activeRoute
+
+            return {
+              type,
+              item: Ru.assoc('isActive', isActive, item)
             }
-
-            return Ru.assoc('isActive', isActive, linkSpec)
         }
+
+        const setActiveForAnchor = linkSpec => {
+            let {
+              type,
+              item
+            } = linkSpec
+
+            // console.log('`${item.pointer}${Ru.tail(item.path)}`::: ', `${item.pointer}${Ru.tail(item.path)}`);
+
+
+            let isActive =  ( `${item.pointer}${Ru.tail(item.path)}` === activeRoute)
+
+            return {
+              type,
+              item: Ru.assoc('isActive', isActive, item)
+            }
+        }
+
+
+        const mapper = Ru.cond([
+          [ Ru.propEq( 'type', 'url')       ,   Ru.I                ],
+          [ Ru.propEq( 'type', 'custom')    ,   Ru.I                ],
+          [ Ru.propEq( 'type', 'anchor')    ,   setActiveForAnchor  ],
+          [ Ru.propEq( 'type', 'route')     ,   setActiveForRoute   ],
+        ])
+
+
+
+
 
         return Ru.map( mapper, linksSpec )
 
@@ -112,42 +143,88 @@ class TopBar extends PureComponent {
 
     renderLink(spec, i){
         let {
-            title,
-            route,
-            anchorLink,
-            className,
-            isUrl,
-            isActive
+            type,
+            item
         } =  spec
 
 
-        let aProps = null
+        const mkUrlProps = item => {
+          let {
+            pointer,
+            sameTab,
+            icon,
+            className
+          } = item
 
-        if ( isUrl ) {
-
-          aProps = {
+          return {
             style: pointerStyle,
-            href: route,
-            target: '_blank',
+            href: pointer,
+            target: sameTab ? '_self' : '_blank',
           }
-
         }
-        else{
 
-          aProps = {
+        const mkCustomProps = item => {
+          let {
+            onClickAction,
+            icon,
+            className
+          } = item
+
+          return {
+            style: pointerStyle,
+            onClick: onClickAction
+          }
+        }
+
+        const mkAnchorProps = item => {
+          let {
+            pointer,
+            path,
+            icon,
+            className,
+          } = item
+
+          return {
             style: pointerStyle,
             onClick: () => {
-              this.props.history.push( route );
-              this.manageTopBar( route );
+              this.props.history.push( pointer )
+              this.manageTopBar( pointer )
+            },
+            href: path
+          }
+        }
+
+        const mkRouteProps = item => {
+          let {
+            pointer,
+            icon,
+            className,
+          } = item
+
+          return {
+            style: pointerStyle,
+            onClick: () => {
+              this.props.history.push( pointer )
+              this.manageTopBar( pointer )
             }
           }
         }
 
-        // return (
-        //   <li key={i} > <a className={ className } href={ anchorLink } {...aProps}>{title}</a> </li>
-        // )
+        const mkProps = Ru.cond([
+          [ Ru.propEq( 'type', 'url')       ,   Ru.o( mkUrlProps    , Ru.prop('item') ) ],
+          [ Ru.propEq( 'type', 'custom')    ,   Ru.o( mkCustomProps , Ru.prop('item') ) ],
+          [ Ru.propEq( 'type', 'anchor')    ,   Ru.o( mkAnchorProps , Ru.prop('item') ) ],
+          [ Ru.propEq( 'type', 'route')     ,   Ru.o( mkRouteProps  , Ru.prop('item') ) ],
+        ])
+
+
+        // console.log('item::: ', item);
+
+
         return (
-          <li key={i} className={(isActive)?'isActive':'' }> <a href={ anchorLink } {...aProps}>{title}</a> </li>
+          item.showIf() ?
+            <li key={i} className={ item.isActive?'isActive':'' }> <a {...mkProps(spec)}>{ item.title }</a> </li>
+            :''
         )
     }
 }
