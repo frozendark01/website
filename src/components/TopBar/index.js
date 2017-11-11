@@ -40,7 +40,7 @@ class TopBar extends PureComponent {
                 location.pathname,
                 this.props.linksSpec
             )
-        });
+        })
 
     }
 
