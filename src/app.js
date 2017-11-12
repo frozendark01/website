@@ -26,7 +26,7 @@ class App extends Component {
         {
           type: 'url',
           item: {
-            pointer: 'http://34.216.30.37:3000/#/register',
+            pointer: 'https://ico.realsafe.co/#/register',
             title: 'DANIEL AUTH',
             sameTab: false,
             icon: null,
@@ -37,11 +37,11 @@ class App extends Component {
         {
           type: 'url',
           item: {
-            pointer: 'http://34.216.30.37:3000/#/register',
+            pointer: 'https://ico.realsafe.co/#/register',
             title: 'JOIN CROWDSALE',
             sameTab: false,
             icon: null,
-            showIf: Ru.K(true),
+            showIf: Ru.K(false),
             className: null
           }
         },
@@ -115,7 +115,7 @@ class App extends Component {
         {
           type: 'url',
           item: {
-            pointer: 'http://34.216.30.37:3000/#/login',
+            pointer: 'https://ico.realsafe.co/',
             title: 'Sign In',
             sameTab: false,
             icon: null,

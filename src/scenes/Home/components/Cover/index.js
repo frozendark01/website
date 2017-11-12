@@ -45,7 +45,7 @@ class Cover extends Component {
                             {/* <h1 className="rs-title">Empowering Banks to Empower You</h1>*/}
                             <p className="rs-description">Proof of Ownership. Step Up Your Corporation to Finance, Trade, Negotiate, Escrow, Raise, Vote, Pay Dividends and Add Partners 100% on the Ethereum Blockchain</p>
                              <div className="btn-cta">
-                                 <a  href="http://34.216.30.37:3000/#/register" target="_blank" className="btn btn-app-download crowdsale">
+                                 <a  href="https://ico.realsafe.co/" target="_blank" className="btn btn-app-download crowdsale">
                                      <i className="fa fa-sign-in"></i>
                                      Join crowdsale
                                  </a>

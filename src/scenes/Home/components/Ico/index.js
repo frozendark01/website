@@ -15,7 +15,7 @@ class Ico extends Component {
                     <Row>
                         <Col md={ 12 }>
                             <h2 className="section-heading wow fadeIn" data-wow-duration="1s">
-                                SIGN UP NOW FOR CARLY ACCESS
+                                SIGN UP NOW FOR EARLY ACCESS
                             </h2>
                         </Col>
                     </Row>
@@ -25,7 +25,7 @@ class Ico extends Component {
                         </Col>
                         <Col md={ 6 } mdOffset={ 3 }>
                             <div className="btn-cta">
-                                <a href="http://34.216.30.37:3000/#/register" target="_blank"  className="btn btn-app-download crowdsale">
+                                <a href="https://ico.realsafe.co/#/register" target="_blank"  className="btn btn-app-download crowdsale">
                                     <i className="fa fa-sign-in"></i>
                                     REGISTER NOW
                                 </a>

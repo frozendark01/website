@@ -56,7 +56,7 @@ class Progress extends Component {
                     <Row className="ico">
                         <Col md={ 6 } mdOffset={ 3 }>
                             <div className="btn-cta">
-                                <a href="http://34.216.30.37:3000/#/register" target="_blank" className="btn btn-app-download crowdsale">
+                                <a href="https://ico.realsafe.co/" target="_blank" className="btn btn-app-download crowdsale">
                                     <i className="fa fa-sign-in"></i>
                                     JOIN crowdsale
                                 </a>

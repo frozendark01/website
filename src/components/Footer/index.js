@@ -2,25 +2,91 @@ import React, { Component } from 'react';
 
 import { Grid, Row , Col } from 'react-bootstrap';
 
+import Alert from 'react-alert'
+
+import sv from '../../services'
+
+import Ru from 'rutils'
+
+console.log('services::: ', sv);
+
 class Footer extends Component {
 
     constructor(props) {
         super(props);
+        this.state = {
+          email: ''
+        }
+
+        this.alertOptions = {
+          offset: 20,
+          position: 'top right',
+          theme: 'light',
+          time: 5000,
+          transition: 'fade'
+        }
+
+        this.handleChange = this.handleChange.bind(this)
+        this.handleSubmit = this.handleSubmit.bind(this)
+        this.showAlert = this.showAlert.bind(this)
     }
+
+    handleChange(e) {
+        let { name, value } = e.target;
+        this.setState({ [name]: value });
+    }
+
+
+    handleSubmit(e) {
+        e.preventDefault();
+
+        console.log('this.state:::', this.state);
+
+
+        let { email } = this.state
+
+        sv
+        .subscribe(email)
+        .then( Ru.when( Ru.I, () => {
+          this.setState({ email: '' }, () => this.showAlert('Email subscribed successfully!', 'success') )
+        }) )
+        .catch(err => {
+          console.log( 'Err-Login', err );
+          this.showAlert(err.description || 'Cannot reach the server', 'error')
+        })
+    }
+
+    showAlert( msg, type ){
+
+      console.log('msg::: ', msg)
+
+       this.msg.show( msg, {
+         time: 10000,
+         type: type
+       })
+     }
 
     render(){
         return(
             <footer className="footer_menu_section footer-section" >
                 <div className="background-overlay" ></div>
-				<Grid>
+                <Alert ref={a => this.msg = a} {...this.alertOptions} />
+		              <Grid>
                     <Row>
                         <Col md={ 4 } mdOffset={ 4 }>
                             <img src={ 'assets/img/logo.png'}/>
                         </Col>
                         <Col md={ 4 } className="footer-form text-left">
                             <h3 className="title">Stay up to date</h3>
-                            <form className="form" action="" method="post" target="_blank">
-                                <input className="input" type="email" name="EMAIL" placeholder="Enter your email" />
+                            <form name="form" className="form" onSubmit={this.handleSubmit}>
+                                <input
+                                  className="input"
+                                  type="email"
+                                  name="email"
+                                  value = {this.state.email}
+                                  placeholder="Enter your email"
+                                  onChange={this.handleChange}
+                                  />
                                 <button className="button">Subscribe</button>
                             </form>
                         </Col>
