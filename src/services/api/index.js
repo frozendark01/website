@@ -18,7 +18,7 @@ const api = null
 const getApi = token => mkApi({
   getToken: Ru.K(token),
   apiRoute: 'api',
-  rootUrl: 'https://test.realsafe.co',
+  rootUrl: 'https://realsafe.co',
   // rootUrl: 'http://localhost:3000',
   versionUrl: Ru.K(''),
   logger: true,
