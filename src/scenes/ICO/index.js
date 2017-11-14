@@ -13,8 +13,8 @@ class ICO extends Component{
     return (
         <div className="sections-container">
             <Progress />
-            <Prepurchased />
             <TokenDistribution />
+            <Prepurchased />
         </div>
     )
   }
