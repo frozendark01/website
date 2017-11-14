@@ -65,7 +65,7 @@ let advisors = [
         name:'Dr. Ben Goertzel',
         office : 'Advisor, AI guru and Singularity Coin Founder',
         bio: 'Ben is a pioneer in AGI, and the creator of OpenCog. Dr. Goertzel speaks regularly at the Boao Forum ("Davos of China") along with top CEOs from mainland China and chairs international conferences to present leading edge technical research on the future of Artificial Intelligence. Dr. Goertzel has published over 12+ books and 125+ research papers on Artificial Intelligence and is acknowledged internationally as a leading expert within even the top tier Artificial Intelligence talents. Dr. Goertzel is well respected and has done numerous projects in mainland China, the USA, and around the world.',
-        image: 'assets/img/team-c.png',
+        image: 'assets/img/ben.jpg',
         type:'advisor'
     },
 ]
