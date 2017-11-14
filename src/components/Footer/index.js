@@ -98,7 +98,7 @@ class Footer extends Component {
 								<i className="fa fa-facebook"></i>
 							</a>
 						</li>
-						<li>
+						{/*<li>
 							<a href="https://twitter.com/" target="new">
 								<i className="fa fa-twitter"></i>
 							</a>
@@ -107,14 +107,15 @@ class Footer extends Component {
 							<a href="https://www.instagram.com/" target="new">
 								<i className="fa fa-linkedin"></i>
 							</a>
-						</li>
+						</li> */}
 						<li>
-							<a href="tg://join?invite=GVjYVk1mx8LsIik8MNz9NA" target="new">
+
+							<a href="https://telegram.me/realsafe" target="new">
 								<i className="fa fa-telegram"></i>
 							</a>
 						</li>
 						<li>
-							<a href="realsafe.slack.com" target="new">
+							<a href="https://realsafe.slack.com" target="new">
 								<i className="fa fa-slack"></i>
 							</a>
 						</li>

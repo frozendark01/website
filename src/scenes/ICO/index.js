@@ -15,7 +15,6 @@ class ICO extends Component{
             <Progress />
             <TokenDistribution />
             <Prepurchased />
-            
         </div>
     )
   }

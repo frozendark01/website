@@ -45,10 +45,6 @@
                margin-bottom: 13px;
             }
         }
-
-        navbar-nav {
-
-        }
     }
 
 
@@ -58,6 +54,7 @@
 
 .floating {
 	margin-top: 0;
+    transition: all ease 1s;
     background: linear-gradient(90deg, $secondary_color, #212121);
     box-shadow: 0 28px 56px 0 rgba(55, 55, 55, 0.22);
 }

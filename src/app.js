@@ -58,6 +58,17 @@ class App extends Component {
         {
           type: 'route',
           item: {
+            pointer: '/',
+            title: 'HOME',
+            icon: null,
+            showIf: Ru.K(true),
+            className: null,
+            isActive: true
+          }
+        },
+        {
+          type: 'route',
+          item: {
             pointer: '/about_realsafe',
             title: 'HOW IT WORKS',
             icon: null,
