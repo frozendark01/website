@@ -15,7 +15,7 @@ class TokenDistribution extends Component {
                         <Col md={ 12 }>
 
                             <h2 className="section-heading">
-                                RealSafe Token (RST) Distribution
+                                Token Distribution of RST
                             </h2>
                         </Col>
                     </Row>
