@@ -109,6 +109,7 @@ class Footer extends Component {
 							</a>
 						</li> */}
 						<li>
+
 							<a href="https://telegram.me/realsafe" target="new">
 								<i className="fa fa-telegram"></i>
 							</a>

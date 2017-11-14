@@ -13,8 +13,7 @@ class TokenDistribution extends Component {
                 <Grid>
                     <Row>
                         <Col md={ 12 }>
-
-                            <h2 className="section-heading">
+                            <h2 className="section-heading wow fadeIn" data-wow-duration="1s">
                                 Token Distribution of RST
                             </h2>
                         </Col>

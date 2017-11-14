@@ -32,7 +32,7 @@ class Prepurchased extends Component {
                     <Row>
                         <Col md={ 12 }>
                             <h2 className="section-heading wow fadeIn" data-wow-duration="1s">
-                                Pre-Purchase an RSO
+                                Pre-Purchase Rules
                             </h2>
                         </Col>
                     </Row>
