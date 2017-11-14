@@ -14,7 +14,7 @@ class TokenDistribution extends Component {
                     <Row>
                         <Col md={ 12 }>
                             <h2 className="section-heading wow fadeIn" data-wow-duration="1s">
-                                RealSafe Token (RST) Distribution
+                                Token Distribution of RST
                             </h2>
                         </Col>
                     </Row>
@@ -25,10 +25,17 @@ class TokenDistribution extends Component {
 
                         <Col md={ 12 }>
                             <div className="social-text">
-                                 <p><span># Coins Minted </span>Max. of 120,000,000 RSTs will exist immediately after ICO completes. Date of ICO to be announced.</p>
-                                <p>A maximum amount of 40,000,000 RST tokens granted to contributors and pre-purchasers (particpants) </p>
-                                <p>2 Matched tokens are minted for every 1 minted to partipcant.</p><br/>
-                                <span> <b>2:1 Matched Token Minting</b></span>
+                                 <p>120,000,000 RSTs will exist after ICO if fully subscribed, plus .5% annual minting.</p>
+                                 <p>Max of 40,000,000 RST tokens minted to participants.  Max of 80,000,000 RST tokens minted as matching grants.</p>
+                                <p>Tokens are only minted when payments are received, so the Reserve is never inflated artifically.</p>
+<br/><span><b>Particpants</b></span>
+<p><b>Investors</b> Persons buying tokens for anticpated future value, either non-US under SEC Reg S or accredited US investors under regs. 506 D and C respectively. In compliance with 506 D, tokens granted to US persons will be frozen in the investor's wallet for a period of one year.</p>
+<p><b>Pre-Purchasers</b> Persons who are company officers or directors pre-purchasing tokens to put their company onto the platform when completed. Just email us with the name of the company, llc, lp or corp. and your position there to get whitelisted.</p>
+<p><b>Donors</b> Investors who do not verify their KYC within 120 days of partipating, lose 2 eth as donation and corresponding tokens minted to the donor pool.  Balance of eth is returned to investor.  For non us residents, verification is a valid passport for nationality and ID for residence. For US investors, under Reg. D, Rule 506 with amendement Rule 506(c), verification is based on emailing accreditation status, such as net worth and liquidity documents and having them approved.  Please see Terms for complete rules.</p>
+                                
+<br/>
+                                <span> <b>2:1 Matched Token Minting</b></span> 
+<p> </p>
                                 <ul className="social-numb-list">
                                     <li><span>25% reserved for developers (priortized by time invested and earliest in over 5 years), ICO creators and deals pertaining to ICO and pre-ICO</span>.</li>
                                     <li><span>25% to the founders</span></li>

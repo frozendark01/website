@@ -94,7 +94,7 @@ class Footer extends Component {
 
 					<ul className="social-media-links wow fadeIn animated" data-wow-duration="1s">
 						<li>
-							<a href="https://www.facebook.com/" target="new">
+							<a href="https://www.facebook.com/RealSafe-143238929645976/" target="new">
 								<i className="fa fa-facebook"></i>
 							</a>
 						</li>
@@ -109,12 +109,12 @@ class Footer extends Component {
 							</a>
 						</li>
 						<li>
-							<a href="https://t.me/" target="new">
+							<a href="tg://join?invite=GVjYVk1mx8LsIik8MNz9NA" target="new">
 								<i className="fa fa-telegram"></i>
 							</a>
 						</li>
 						<li>
-							<a href="#" target="new">
+							<a href="realsafe.slack.com" target="new">
 								<i className="fa fa-slack"></i>
 							</a>
 						</li>
