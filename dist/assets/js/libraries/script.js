@@ -75,6 +75,10 @@
 			$( this ).show().addClass( 'bounceIn' ).next().show();
 		});
 
+		$("nav").find("li").on("click", "a", function () {
+			  $('.navbar-toggle').trigger('click');
+		  });
+		  
 		/* =======================================
 		 * Detect Mobile Device
 		 * =======================================
