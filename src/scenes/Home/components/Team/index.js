@@ -13,44 +13,45 @@ import Player from './components/Player'
 let team = [
     {
         name:'James Yen',
-        office : 'Co-funder - Managing Director',
+        office : 'Chairman & Managing Director',
         linkedin: 'https://www.linkedin.com/in/james-yen-463b6257/',
-        bio: 'Mr. Yen is an ex-Wall Street Investment Banker and Ex-Hedge Fund Manager, having managed a $1.8 billion+ dollar portfolio at CIFC Asset Management LLC, the 3rd largest leveraged finance Hedge Fund and CLO in the United States. Mr. Yen has 10-years experience in sectors including financial technology and payment systems, having been the largest Institutional Leveraged Loan Investor to such companies as First Data, Vantiv, TransFirst, RBS WorldPay, EZE Software, Digital Insight, First American Payments, Gemalto, Fleetcorp, Verifone, and others. Mr. Yen has operating experience in sustainable trade facilitation in developing nations and is now a Development Investor with a track record in sourcing development projects around the world.',
+        bio: 'Mr. Yen, providing general vision and oversight to RealSafe, leaves Wall Street as an Investment Banker and Hedge Fund Manager having managed a $1.8 billion+ dollar portfolio at CIFC Asset Management LLC, the 3rd largest leveraged finance Hedge Fund and CLO in the United States. Mr. Yen has 10-years experience in sectors including financial technology and payment systems, having been the largest Institutional Leveraged Loan Investor to such companies as First Data, Vantiv, TransFirst, RBS WorldPay, EZE Software, Digital Insight, First American Payments, Gemalto, Fleetcorp, Verifone, and others. Mr. Yen has operating experience in sustainable trade facilitation in developing nations and is now a Development Investor with a track record in sourcing development projects around the world.',
         image: 'assets/img/team-1.png',
         type:'team'
 
     },
     {
         name:'Ken Silverman',
-        office : 'Co-founder',
+        office : 'CEO, Chief Scientist & Project Lead',
         linkedin: 'https://www.linkedin.com/in/ken-silverman-734506/',
-        bio: 'The creator of RealSafe, Ken is a computer engineer with 20+ years experience designing Financial Technology Systems, Artificial Intelligence frameworks, and social commerce and social geolocation based real time transaction platforms. Mr. Silverman is the co-founder of one of the first artificial intelligence companies to use machine learning in predictive analytics. Ken served as co-founder and vice-president of technology at Webmind Inc. now being called the earliest basis of SingularityNet.io  He is the Chairman and CTO of Spotwired. Mr. Silverman has years of experience in cutting edge FinTech applications and is currently active in Blockchain technology and ICO markets. He regularly contributes to Blockchain whitepapers and research theses ideas. A seasoned property manger with a portfolio of assets, RealSafe was born while discussing with James a way to pair foreign investors with extranational assets.',
+        bio: 'The creator and architect of RealSafe, Ken is a computer engineer with 20+ years experience designing financial technology Systems, artificial Intelligence frameworks, and social commerce and social geolocation-based real-time transaction platforms. Mr. Silverman is the co-founder of one of the first artificial intelligence companies to use machine learning in predictive analytics. Ken served as co-founder and vice-president of technology at Webmind Inc. now being called the earliest basis of SingularityNet.io  He is the Chairman and CTO of Spotwired. Mr. Silverman has years of experience in cutting edge FinTech applications and is currently active in Blockchain technology and ICO markets. He regularly contributes to Blockchain whitepapers and research theses ideas. A seasoned property manger with a portfolio of assets, RealSafe was born while discussing with James a way to pair foreign investors with extranational assets.',
         image: 'assets/img/team-2.png',
         type:'team'
     },
     {
         name:'Daniel Tiati Dang',
-        office : 'Software Engineer',
+        office : 'Network and Integration Lead',
         linkedin: 'https://www.linkedin.com/in/danieltiati/',
-        bio: 'He is a passionate software developer with more than 3 years experiences designing and implementing software systems. He hold Telecommunication Engineering degree from Polytechnic University of Catalonia(Spain), and he has served in multiple software positions before specializing in the last years as Data and Backend Engineer. He love adventuring with cutting edge technologies, hoping to  contribute to the progress of society.',
+        bio: 'Dani is a passionate software developer with more than 3 years experiences designing and implementing software systems. He holds a Telecommunication Engineering degree from Polytechnic University of Catalonia and has served in multiple software positions before specializing in the last years as Data and Backend Engineer. He loves adventuring with cutting edge technologies, hoping to contribute to the progress of society.',
         image: 'assets/img/dani.jpg',
         type:'team'
     },
     {
         name:'Alex Oviedo',
-        office : 'Software Engineer',
+        office : 'Product Design Lead',
         linkedin: 'https://www.linkedin.com/in/alexovi/',
-        bio: 'Over 6 years of experience as a Full stack web developer. He is currently the Lead of UI/UX and product development, graduated as Computer Network Engineer from Polytechnic University of Catalonia (Spain). He has specialized in cloud computing and is responsible for the infrastructure of several projects. He was born in Ecuador and is a passionate about new technologies mainly in software development, cloud computing and UX.',
+        bio: 'With 7 years of experience as a Full stack web developer, Alex is currently the Lead of UI/UX and product development, graduated as Computer Network Engineer from Polytechnic University of Catalonia. He has specialized in cloud computing and is responsible for the infrastructure of several projects. He was born in Ecuador and is a passionate about new technologies mainly in software development, cloud computing and UX.',
         image: 'assets/img/alex.jpg',
         type:'team'
     }
 ];
 
 let advisors = [
+
     {
         name: 'Dr. Anzalee Khan',
         office : 'Advisor, Grant Writer, Statistician',
-        bio: 'Anzalee is renown world-wide in the pharmaceutical industry as a leading investigator and applied statistician and big data scientist. Dr. Khan-Rhodes analyzes large data sets pertaining to inventing novel outcome measures in the pharmaceutical space and is the creator of the mini-PANS scale. Dr. Khan-Rhodes is an expert in analysis with R, SAS, SPSS, and Standard Setting. Dr. Khan-Rhodes has over 15 years of experience in psychometrics, testing and measurement, and statistical analysis in CNS trials. She served as a statistical and psychometric lead in Clinical Data Sciences at several eCOA and Rater Training vendor companies where she developed processes for clinical data validation and implemented statistical methods for evaluating rater training methodologies, clinical algorithms and data surveillance techniques. Dr. Khan is a former American Society of Clinical Psychopharmacology (ASCP) New Investigator Award recipient, International Congress of Schizophrenia Research (ICOSR) Young Investigator Award recipient and European Psychiatric Association (EPA) Travel Award recipient, and has recently completed a 5-year research grant from the US NIH to assess the relationship of genotypes and response to cognitive interventions. She has co-authored over 50 peer-reviewed publications and has contributed to book chapters and review articles on schizophrenia, Alzheimers, Autism, and other mental health areas.',
+        bio: 'Anzalee is renown world-wide as a leading investigator and applied statistician and big data scientist. Dr. Khan-Rhodes analyzes large data sets pertaining to inventing novel outcome measures in the pharmaceutical space and is the creator of the mini-PANS scale. Dr. Khan-Rhodes is an expert in analysis with R, SAS, SPSS, and Standard Setting. Dr. Khan-Rhodes has over 15 years of experience in psychometrics, testing and measurement, and statistical analysis in CNS trials. She served as a statistical and psychometric lead in Clinical Data Sciences at several eCOA and Rater Training vendor companies where she developed processes for clinical data validation and implemented statistical methods for evaluating rater training methodologies, clinical algorithms and data surveillance techniques. Dr. Khan is a former American Society of Clinical Psychopharmacology (ASCP) New Investigator Award recipient, International Congress of Schizophrenia Research (ICOSR) Young Investigator Award recipient and European Psychiatric Association (EPA) Travel Award recipient, and has recently completed a 5-year research grant from the US NIH to assess the relationship of genotypes and response to cognitive interventions. She has co-authored over 50 peer-reviewed publications and has contributed to book chapters and review articles on schizophrenia, Alzheimers, Autism, and other mental health areas.',
         image: 'assets/img/anzalee.jpg',
         type:'advisor'
     },
